@@ -1,0 +1,26 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Apache Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Apache Hudi generated datasets
+processed/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+EOF

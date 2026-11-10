@@ -1,0 +1,19 @@
+# Input and output paths for ETL and consumption pipelines
+
+seller_catalog:
+  input_path: "/mnt/c/Users/Unnatesh/Downloads/2025em1100218/ecommerce_seller_recommendation/raw/seller_catalog/seller_catalog.csv"
+  hudi_output_path: "/mnt/c/Users/Unnatesh/Downloads/2025em1100218/ecommerce_seller_recommendation/processed/hudi/seller_catalog/"
+
+company_sales:
+  input_path: "/mnt/c/Users/Unnatesh/Downloads/2025em1100218/ecommerce_seller_recommendation/raw/company_sales/company_sales.csv"
+  hudi_output_path: "/mnt/c/Users/Unnatesh/Downloads/2025em1100218/ecommerce_seller_recommendation/processed/hudi/company_sales/"
+
+competitor_sales:
+  input_path: "/mnt/c/Users/Unnatesh/Downloads/2025em1100218/ecommerce_seller_recommendation/raw/competitor_sales/competitor_sales.csv"
+  hudi_output_path: "/mnt/c/Users/Unnatesh/Downloads/2025em1100218/ecommerce_seller_recommendation/processed/hudi/competitor_sales/"
+
+recommendation:
+  seller_catalog_hudi: "/mnt/c/Users/Unnatesh/Downloads/2025em1100218/ecommerce_seller_recommendation/processed/hudi/seller_catalog/"
+  company_sales_hudi: "/mnt/c/Users/Unnatesh/Downloads/2025em1100218/ecommerce_seller_recommendation/processed/hudi/company_sales/"
+  competitor_sales_hudi: "/mnt/c/Users/Unnatesh/Downloads/2025em1100218/ecommerce_seller_recommendation/processed/hudi/competitor_sales/"
+  output_csv: "/mnt/c/Users/Unnatesh/Downloads/2025em1100218/ecommerce_seller_recommendation/processed/recommendations/seller_recommend_data"
