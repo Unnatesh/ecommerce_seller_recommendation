@@ -123,7 +123,7 @@ The provided input data has several quality issues that affect the recommendatio
 
 ### Why Recommendations Look Similar:
 
-**This is actually correct behavior!** According to the assignment:
+**This is actually correct behavior!** The Goal is : 
 > "recommend top-selling items that each seller currently does not have"
 
 If the top-selling items globally ARE similar (which the data shows), then:
